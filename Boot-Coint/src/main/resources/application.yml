@@ -1,0 +1,17 @@
+
+server:
+  port: 8089 #${PORT:0}
+spring:
+  application:
+    name: boot-coin
+  main:
+    allow-bean-definition-overriding: true
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: boot-coin
+
+eureka:
+  client:
+  service-url:
+  defaultZone: http://localhost:8761/eureka
